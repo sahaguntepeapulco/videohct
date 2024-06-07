@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>HardcordTraining</title>
+</head>
+<body>
+
+<video id="miVideo" width="640" height="360" autoplay muted>
+    <source src="C:\Users\AlxL\Documents\Camtasia/hct.mp4" type="video/mp4">
+    Tu navegador no soporta el elemento de video.
+</video>
+
+<script>
+    // Obtén el video
+    var video = document.getElementById('miVideo');
+
+    // Añade el evento 'ended' que redirecciona cuando el video termina
+    video.addEventListener('ended', function() {
+        window.location = 'https://hardcordtraining-ec53e05e05b2.herokuapp.com/';
+    }, false);
+</script>
+
+</body>
+</html>
